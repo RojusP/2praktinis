@@ -21,7 +21,6 @@ void pridetiMokini() {
     cout << "Iveskite mokinio varda: ";
     cin >> vardai[mokiniuKiekis];
 
-    // --- Tikriname pažymių kiekį ---
     do {
         cout << "Kiek pazymiu ivesti (1-10): ";
         cin >> pazymiuKiekis[mokiniuKiekis];
@@ -30,8 +29,7 @@ void pridetiMokini() {
             cout << "Klaida: galima ivesti tik nuo 1 iki 10 pazymiu.\n";
         }
     } while (pazymiuKiekis[mokiniuKiekis] < 1 || pazymiuKiekis[mokiniuKiekis] > 10);
-
-    // --- Įvedame pažymius ---
+    
     for (int i = 0; i < pazymiuKiekis[mokiniuKiekis]; i++) {
         int pazymys;
         do {
